@@ -36,13 +36,13 @@ class _StatisticsDashboardState extends State<StatisticsDashboard> {
                   child: Column(
                     children: [
                       CardModel(
-                          icon: Icons.price_change_outlined,
-                          title: 'earning',
+                          icon: Icons.attach_money,
+                          title: 'Earnings',
                           price: 140.5,
                           growthpercentage: 12.8,
                           comparevalue: 11),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(10, 20, 0, 15),
+                        padding: const EdgeInsets.fromLTRB(10, 10, 0, 15),
                         child: Column(
                           children: [
                             const Row(

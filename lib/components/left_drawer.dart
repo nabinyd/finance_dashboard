@@ -22,31 +22,31 @@ class LeftDrawer extends StatelessWidget {
               leading: const Icon(Icons.dashboard),
               title: TextWidget(
                   title: 'Overview',
-                  fontsize: 18,
+                  fontsize: 14,
                   fontweight: FontWeight.normal,
                   textcolor: ColorList().lighttext),
             ),
             ListTile(
               leading: const Icon(Icons.bar_chart),
               title: TextWidget(
-                  title: 'Overview',
-                  fontsize: 18,
+                  title: 'Statistics',
+                  fontsize: 14,
                   fontweight: FontWeight.normal,
                   textcolor: ColorList().lighttext),
             ),
             ListTile(
               leading: const Icon(Icons.save_as_outlined),
               title: TextWidget(
-                  title: 'Overview',
-                  fontsize: 18,
+                  title: 'Savivngs',
+                  fontsize: 14,
                   fontweight: FontWeight.normal,
                   textcolor: ColorList().lighttext),
             ),
             ListTile(
               leading: const Icon(Icons.pie_chart),
               title: TextWidget(
-                  title: 'Overview',
-                  fontsize: 18,
+                  title: 'Portfolio',
+                  fontsize: 14,
                   fontweight: FontWeight.normal,
                   textcolor: ColorList().lighttext),
               trailing: IconButton(
@@ -55,8 +55,8 @@ class LeftDrawer extends StatelessWidget {
             ListTile(
               leading: const Icon(Icons.message),
               title: TextWidget(
-                  title: 'Overview',
-                  fontsize: 18,
+                  title: 'Messages',
+                  fontsize: 14,
                   fontweight: FontWeight.normal,
                   textcolor: ColorList().lighttext),
               trailing: const Badge(
@@ -67,8 +67,8 @@ class LeftDrawer extends StatelessWidget {
             ListTile(
               leading: const Icon(Icons.dataset),
               title: TextWidget(
-                  title: 'Overview',
-                  fontsize: 18,
+                  title: 'Transactions',
+                  fontsize: 14,
                   fontweight: FontWeight.normal,
                   textcolor: ColorList().lighttext),
             ),
@@ -77,32 +77,32 @@ class LeftDrawer extends StatelessWidget {
             ),
             ListTile(
               title: TextWidget(
-                  title: 'Overview',
-                  fontsize: 18,
+                  title: 'General',
+                  fontsize: 16,
                   fontweight: FontWeight.normal,
-                  textcolor: ColorList().lighttext),
+                  textcolor: ColorList().blacktext),
             ),
             ListTile(
               leading: const Icon(Icons.settings),
               title: TextWidget(
-                  title: 'Overview',
-                  fontsize: 18,
+                  title: 'Settings',
+                  fontsize: 14,
                   fontweight: FontWeight.normal,
                   textcolor: ColorList().lighttext),
             ),
             ListTile(
               leading: const Icon(Icons.photo_album_outlined),
               title: TextWidget(
-                  title: 'Overview',
-                  fontsize: 18,
+                  title: 'Appearences',
+                  fontsize: 14,
                   fontweight: FontWeight.normal,
                   textcolor: ColorList().lighttext),
             ),
             ListTile(
               leading: const Icon(Icons.help),
               title: TextWidget(
-                  title: 'Overview',
-                  fontsize: 18,
+                  title: 'Need help?',
+                  fontsize: 14,
                   fontweight: FontWeight.normal,
                   textcolor: ColorList().lighttext),
             ),

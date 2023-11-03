@@ -1,6 +1,7 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TextWidget extends StatelessWidget {
   TextWidget({
@@ -20,7 +21,7 @@ class TextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: TextStyle(
+      style: GoogleFonts.poppins(
           fontSize: fontsize, color: textcolor, fontWeight: fontweight),
     );
   }
@@ -52,4 +53,6 @@ class ColorList {
   Color bluecolor = const Color.fromRGBO(20, 59, 127, 1);
   Color lighttext = const Color.fromRGBO(180, 180, 180, 1);
   Color blacktext = Colors.black;
+  Color earning = Colors.indigo.shade300;
+  Color savings = Colors.blue.shade100;
 }

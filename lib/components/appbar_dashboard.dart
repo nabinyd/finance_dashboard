@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:finance_dashboard/style/styling.dart';
 import 'package:flutter/material.dart';
 
@@ -7,13 +9,10 @@ class AppBarDashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    const bgcolor = Color.fromRGBO(240, 240, 240, 1);
-    const cardColor = Color.fromRGBO(255, 255, 255, 1);
-    const bluecolor = Color.fromRGBO(20, 59, 127, 1);
     return Container(
       height: 80,
       // width: double.infinity,
-      decoration: const BoxDecoration(color: cardColor),
+      decoration: BoxDecoration(color: ColorList().cardColor),
       child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -24,13 +23,13 @@ class AppBarDashboard extends StatelessWidget {
                 children: [
                   const Icon(Icons.cloud),
                   PaddingSymmetric(
-                    vertical: 16,
-                    horizontal: 32,
+                    horizontal: 5,
+                    vertical: 0,
                     child: TextWidget(
                         title: 'CloudFinance',
                         fontsize: 20,
                         fontweight: FontWeight.w800,
-                        textcolor: Colors.black),
+                        textcolor: ColorList().blacktext),
                   )
                 ],
               ),
@@ -52,31 +51,29 @@ class AppBarDashboard extends StatelessWidget {
                         border: Border.all(color: Colors.black38),
                         borderRadius:
                             const BorderRadius.all(Radius.circular(50))),
-                    child: const Padding(
-                      padding: EdgeInsets.all(8.0),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
                       child: TextField(
                           decoration: InputDecoration(
-                              border: OutlineInputBorder(
+                              border: const OutlineInputBorder(
                                   borderSide: BorderSide.none),
-                              fillColor: bgcolor,
-                              icon: Icon(Icons.search),
-                              label: Text('Search'))),
+                              fillColor: ColorList().bgcolor,
+                              icon: const Icon(Icons.search),
+                              label: const Text('Search'))),
                     ),
                   ),
                   const Icon(Icons.notifications)
                 ],
               ),
             ),
-            const Expanded(
+            Expanded(
               flex: 1,
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 10),
                 child: ListTile(
-                    leading: CircleAvatar(
-                      backgroundColor: bluecolor,
-                    ),
+                    leading: CircleAvatar(),
                     title: Text("Nabin Yadav"),
-                    subtitle: Text('nabiny501@gmail.com,')),
+                    subtitle: Text('nabiny501@gmail.com')),
               ),
             )
           ]),

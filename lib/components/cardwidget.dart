@@ -1,3 +1,4 @@
+import 'package:boxicons/boxicons.dart';
 import 'package:finance_dashboard/model/cardmodel.dart';
 
 import 'package:flutter/material.dart';
@@ -12,25 +13,25 @@ class CardWidget extends StatelessWidget {
       children: [
         CardModel(
             icon: Icons.attach_money,
-            title: 'savings',
+            title: 'Earnings',
             price: 100.5,
             growthpercentage: 8,
             comparevalue: 2),
         CardModel(
-            icon: Icons.attach_money,
-            title: 'savings',
+            icon: Icons.shop,
+            title: 'Spendings',
             price: 100.5,
             growthpercentage: 8,
             comparevalue: 2),
         CardModel(
-            icon: Icons.attach_money,
-            title: 'savings',
+            icon: Icons.group,
+            title: 'Investment',
             price: 100.5,
             growthpercentage: 8,
             comparevalue: 2),
         CardModel(
-            icon: Icons.attach_money,
-            title: 'savings',
+            icon: Icons.save,
+            title: 'Savings',
             price: 100.5,
             growthpercentage: 8,
             comparevalue: 2),
